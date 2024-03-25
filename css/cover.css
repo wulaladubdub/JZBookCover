@@ -1,0 +1,150 @@
+/* Global Styles : DO NOT EDIT */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.square {
+    width: 800px;
+	height: 1000px;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+    transform: translate(-50%,-50%);
+    background: #fefae0;
+}
+
+.grid_container {
+	width: 1000px;
+	height: 200px;
+	position: absolute;
+	left: 100px;
+	top: 30px;
+	z-index: 2;
+}
+
+.grid_container2 {
+	width: 2000px;
+	height: 200px;
+	position: absolute;
+	left: 180px;
+	top: 130px;
+	z-index: 2;
+}
+
+@font-face {
+	font-family: 'Monofett-Regular';
+	src: url(../fonts/Monofett-Regular.ttf);
+}
+
+.grid_container4 {
+	width: 1200px;
+	height: 200px;
+	position: absolute;
+	left: 200px;
+	bottom: 30px;
+	z-index: 2;
+}
+
+.grid_container4 .mono {
+	font-family: 'Monofett-Regular';
+    font-size: 3em;
+}
+
+.text {
+	width: 1000px;
+	height: 200px;
+	position: absolute;
+	left: 100px;
+	top: 710px;
+}
+
+.text .mono {
+    font-size: 1.5em;
+}
+
+@font-face {
+	font-family: 'Monda-Bold';
+    src: url(../fonts/Monda-Bold.ttf);
+}
+
+.mono {
+	font-family: 'Monda-Bold';
+	font-size: 5em;
+	float: left;
+	margin-left: 5px;
+	vertical-align: middle;
+	letter-spacing: 3px;
+
+}
+
+.mono.space {
+    width: 15px;
+    float: left;
+}
+
+.bill {
+	width: auto;
+	height: 200px;
+	left: 100px;
+    top: 400px;
+	position: absolute;
+	z-index: 1;
+}
+
+.sam {
+	width: auto;
+	height: 200px;
+	left: 250px;
+    top: 400px;
+	position: absolute;
+	z-index: 1;
+}
+
+.karl {
+	width: auto;
+	height: 200px;
+	left: 400px;
+    top: 400px;
+	position: absolute;
+	z-index: 1;
+}
+
+.tom {
+	width: auto;
+	height: 150px;
+	left: 350px;
+    top: 400px;
+	position: absolute;
+	z-index: 1;
+    position: absolute;
+}
+  
+@keyframes pathBill {
+    0% { transform: rotate(0deg) translateX(50px); }
+    100% { transform: rotate(360deg) translateX(50px); }
+}
+
+@keyframes pathSam {
+    0% { transform: rotate(0deg) translateX(50px); }
+    100% { transform: rotate(360deg) translateX(50px); }
+}
+
+@keyframes pathKarl {
+    0% { transform: rotate(0deg) translateX(50px); }
+    100% { transform: rotate(360deg) translateX(50px); }
+}
+
+.bill, .sam, .karl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: -20% -20%;
+}
+
+.bill { animation: pathBill 3s linear 1s infinite; }
+
+.sam { animation: pathSam 3s linear 2s infinite; }
+
+.karl { animation: pathKarl 3s linear 3s infinite; }
